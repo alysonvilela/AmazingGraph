@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* # Colors:
+Orange: #D2872C<br>
+Gray: #766F68 */
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Montserrat';
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+    align-items: center;
+}
+
+.logo {
+    color: #D2872C;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+header ul{
+    display: none;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+/* #home .mainbg{ */
+.main-bg {
+    position: absolute;
+    background: url('/AmazingGraph/assets/team.jpg');
+    background-position: center; /* can or not use it */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 90% ;
+    height: 30% ;
+    top: 10%;
+    z-index: -1;
+}
+
+.infos {
+    background: transparent;
+    /* padding: 15em 2em 10em 2em; */
+    margin: 30% 2em auto 2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    flex-direction: column;
+    color: #766F68;
+}
+
+.infos h1{
+    font-size: 2.5em;
+    line-height: 1em;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.infos .text h3 {
+    font-weight: lighter;
+}
+
+.infos a{
+    padding: 15px;
+    font-size: 1.5em;
+    color: white;
+    background: #D2872C;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px;
+    margin: 20px auto;
+}
+
+.infos a:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #D0772C;
+}
+
+@media screen and (min-width: 550px){
+    /* .nav {
+        background: rgb(190, 71, 71);
+        display: flex;
+        justify-content: space-between;
+        padding: 1em 3em;
+    } */
+
+    .hide-desktop {
+        display: none;
+    }
+
+    
+    header ul{
+    display: flex;
+    padding: .1em;
+    }
+
+    header ul li {
+    margin: 0 .5em;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        color: #766F68;
+    }
+
+    header ul li a:hover{
+        color: #D2872C;
+        transition: .3s ease-in-out;
+    }
+    
+
+}
+
+@media screen and (min-width: 670px){
+    
+    .nav {
+        margin: 0 11.5%;
+    }
+    
+    .main-bg{
+        background-repeat: no-repeat;
+        right: 2em;
+        width: 65%;
+        height: 100%;
+        top: 10%;
+        transition: .3s linear;
+    }
+
+    .home {
+        width: 100%;
+    }
+
+    .home h1{
+        font-size: 2.98em;
+    }
+
+    .infos {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .infos .text {
+        text-align: left;
+        justify-content: left;
+    }
+
+    .infos .text h3{
+        margin-right: 50%;
+        /* font-weight: .8em; */
+    }
+
+    .infos a{
+        margin: 20px 0;
+        font-size: 1em;
+    }
+
+    .nav ul li:nth-child(3){
+        padding: 0 .5em;
+        border-radius: 20px;
+
+    }
+}
+

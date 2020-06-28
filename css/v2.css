@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* # Colors:
+Orange: #D2872C<br>
+Gray: #766F68 */
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10%;
+    align-items: center;
+    color: #D2872C;
+}
+
+.open-desktop{
+    display: none;
+}
+
+.hide-desktop{
+    cursor: pointer;
+}
+
+section#home {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.team img{
+    width: 90vw;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10% 0% 10% 0%; */
+    text-align: center;
+}
+
+.text {
+    margin: 10% 0%;
+    color: #766F68;
+}
+
+.text h1{
+    font-size: 35px;
+    margin: 5%;
+}
+
+.infos a{
+    font-size: 25px;
+    padding: 2% 15%;
+    background: #D2872C;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
